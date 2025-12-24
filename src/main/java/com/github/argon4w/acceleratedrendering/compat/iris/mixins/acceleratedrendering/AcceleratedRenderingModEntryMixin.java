@@ -1,5 +1,5 @@
 package com.github.argon4w.acceleratedrendering.compat.iris.mixins.acceleratedrendering;
-
+import com.github.argon4w.acceleratedrendering.AcceleratedRenderingModEntry;
 import com.github.argon4w.acceleratedrendering.compat.iris.programs.IrisPrograms;
 import net.minecraftforge.fml.ModLoadingContext;
 import org.spongepowered.asm.mixin.Mixin;
