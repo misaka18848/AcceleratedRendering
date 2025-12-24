@@ -11,8 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(AcceleratedRenderingModEntry.class)
 public class AcceleratedRenderingModEntryMixin {
 
+    // 🔧 明确指定注入到带 FMLJavaModLoadingContext 参数的构造函数
     @Inject(
-        method = "<init>",
+        method = "<init>(Lnet/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext;)V",
         at = @At("TAIL"),
         remap = false
     )
